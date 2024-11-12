@@ -1,6 +1,6 @@
 const library = [];
 const booksByCardMap = new Map();
-const booksContainer = document.querySelector(".books-container");
+const booksContainer = document.querySelector(".books-cards-container");
 
 function Book(author, title, pagesCount) {
     this.author = author;
