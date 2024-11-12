@@ -46,7 +46,7 @@ button {
     outline: 1px solid rgb(90, 120, 255);
 }
 
-.book-entry .input-container input:invalid {
+.book-entry .input-container input:focus:invalid {
     outline: 1px solid rgb(255, 90, 90);
 }
 
