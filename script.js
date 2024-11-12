@@ -16,6 +16,11 @@ function addBookToLibrary(book) {
     booksByCardMap.set(card, book);
 }
 
+function removeBookFromLibrary(card) {
+    library.removeChild(booksByCardMap.get(card));
+    booksContainer.removeChild(card);
+}
+
 function generateCardFromBook(book) {
     const card = document.createElement("div");
 
