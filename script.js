@@ -18,10 +18,18 @@ function addBookToLibrary(book) {
 
 function generateCardFromBook(book) {
     const card = document.createElement("div");
+
     const author = document.createElement("div");
+    author.textContent = book.author;
+
     const title = document.createElement("div");
+    title.textContent = book.title;
+
     const pagesCount = document.createElement("div");
+    pagesCount.textContent = book.pagesCount;
+
     const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
 
     // apply style
 
