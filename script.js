@@ -25,6 +25,7 @@ function removeBookFromLibrary(card) {
 
 function generateCardFromBook(book) {
     const card = document.createElement("div");
+    card.classList.add("book-card");
 
     const author = document.createElement("div");
     author.textContent = book.author;
