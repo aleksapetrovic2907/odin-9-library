@@ -19,6 +19,7 @@ function addBookToLibrary(book) {
 function removeBookFromLibrary(card) {
     const book = booksByCardMap.get(card);
     library = library.filter(item => item !== book);
+    booksByCardMap.delete(card);
     booksContainer.removeChild(card);
 }
 
