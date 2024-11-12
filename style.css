@@ -22,6 +22,11 @@ button {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.book-entry button {
+    background-color: rgb(90, 120, 255);
+    color: white;
+}
+
 .book-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
