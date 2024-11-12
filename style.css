@@ -23,3 +23,9 @@
 .book-card h2 {
     margin-bottom: 12px;
 }
+
+.book-card p {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(122, 122, 122);
+}
