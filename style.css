@@ -29,3 +29,7 @@
     font-style: italic;
     color: rgb(122, 122, 122);
 }
+
+.book-card p:last-of-type {
+    margin-bottom: 8px;
+}
