@@ -37,4 +37,5 @@
 .book-card button {
     border-radius: 6px;
     border: none;
+    padding: 12px;
 }
