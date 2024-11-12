@@ -1,6 +1,7 @@
 let library = [];
 let booksByCardMap = new Map();
 let booksContainer = document.querySelector(".book-cards-container");
+let addToLibraryButton = document.querySelector("#add-to-library-btn");
 
 function Book(author, title, pagesCount) {
     this.author = author;
