@@ -5,3 +5,7 @@ function Book(author, title, releaseDate) {
     this.title = title;
     this.releaseDate = releaseDate;
 }
+
+function addBookToLibrary(book) {
+    myLibrary.push(book);
+}
