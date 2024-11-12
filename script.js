@@ -9,7 +9,9 @@ function Book(author, title, pagesCount, releaseDate) {
 }
 
 function addBookToLibrary(book) {
+    const card = generateCardFromBook(book);
     library.push(book);
+    bookCardMap.set(card, book);
 }
 
 function generateCardFromBook(book) {
