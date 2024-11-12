@@ -41,6 +41,10 @@ button {
     box-shadow: rgba(0, 0, 0, 0.075) 1.95px 1.95px 2.6px;
 }
 
+.book-entry .input-container input:focus {
+    outline: 1px solid rgb(90, 120, 255);
+}
+
 .book-entry button {
     background-color: rgb(90, 120, 255);
     color: white;
