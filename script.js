@@ -1,4 +1,5 @@
 const myLibrary = [];
+const bookCards = [];
 
 function Book(author, title, pagesCount, releaseDate) {
     this.author = author;
