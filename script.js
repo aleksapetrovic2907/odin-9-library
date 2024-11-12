@@ -1,4 +1,4 @@
-const myLibrary = [];
+const library = [];
 const bookCards = [];
 
 function Book(author, title, pagesCount, releaseDate) {
@@ -14,5 +14,5 @@ function BookCard(book, card) {
 }
 
 function addBookToLibrary(book) {
-    myLibrary.push(book);
+    library.push(book);
 }
