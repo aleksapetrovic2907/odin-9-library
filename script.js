@@ -1,6 +1,6 @@
 const library = [];
 const booksByCardMap = new Map();
-const booksContainer = document.querySelector("books-container");
+const booksContainer = document.querySelector(".books-container");
 
 function Book(author, title, pagesCount) {
     this.author = author;
@@ -11,7 +11,7 @@ function Book(author, title, pagesCount) {
 function addBookToLibrary(book) {
     const card = generateCardFromBook(book);
     booksContainer.appendChild(card);
-    
+
     library.push(book);
     booksByCardMap.set(card, book);
 }
