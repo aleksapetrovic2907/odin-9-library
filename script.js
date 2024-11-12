@@ -27,11 +27,11 @@ function generateCardFromBook(book) {
     const card = document.createElement("div");
     card.classList.add("book-card");
 
-    const author = document.createElement("p");
-    author.textContent = `Author: ${book.author}`;
-
     const title = document.createElement("h2");
     title.textContent = book.title;
+
+    const author = document.createElement("p");
+    author.textContent = `Author: ${book.author}`;
 
     const pagesCount = document.createElement("p");
     pagesCount.textContent = `${book.pagesCount} pages.`;
@@ -44,8 +44,8 @@ function generateCardFromBook(book) {
 
     // apply style
 
-    card.appendChild(author);
     card.appendChild(title);
+    card.appendChild(author);
     card.appendChild(pagesCount);
     card.appendChild(deleteButton);
 
