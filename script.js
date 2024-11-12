@@ -1,7 +1,20 @@
 let library = [];
 let booksByCardMap = new Map();
 let booksContainer = document.querySelector(".book-cards-container");
-let addToLibraryButton = document.querySelector("#add-to-library-btn");
+let bookEntryForm = document.querySelector(".book-entry");
+
+bookEntryForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const book = new Book
+    (
+        document.querySelector("#author").value,
+        document.querySelector("#title").value,
+        document.querySelector("#pages-count").value
+    );
+
+    addBookToLibrary(book);
+})
 
 function Book(author, title, pagesCount) {
     this.author = author;
