@@ -1,5 +1,5 @@
 const library = [];
-const bookCardMap = new Map();
+const booksByCardMap = new Map();
 
 function Book(author, title, pagesCount, releaseDate) {
     this.author = author;
@@ -11,7 +11,7 @@ function Book(author, title, pagesCount, releaseDate) {
 function addBookToLibrary(book) {
     const card = generateCardFromBook(book);
     library.push(book);
-    bookCardMap.set(card, book);
+    booksByCardMap.set(card, book);
 }
 
 function generateCardFromBook(book) {
