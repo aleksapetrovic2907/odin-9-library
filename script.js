@@ -20,6 +20,7 @@ function generateCardFromBook(book) {
     const title = document.createElement("div");
     const pagesCount = document.createElement("div");
     const releaseDate = document.createElement("div");
+    const deleteButton = document.createElement("button");
 
     // apply style
 
@@ -27,6 +28,7 @@ function generateCardFromBook(book) {
     card.appendChild(title);
     card.appendChild(pagesCount);
     card.appendChild(releaseDate);
+    card.appendChild(deleteButton);
 
     return card;
 }
