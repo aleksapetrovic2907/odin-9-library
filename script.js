@@ -27,13 +27,13 @@ function generateCardFromBook(book) {
     const card = document.createElement("div");
     card.classList.add("book-card");
 
-    const author = document.createElement("div");
+    const author = document.createElement("h2");
     author.textContent = book.author;
 
-    const title = document.createElement("div");
+    const title = document.createElement("p");
     title.textContent = book.title;
 
-    const pagesCount = document.createElement("div");
+    const pagesCount = document.createElement("p");
     pagesCount.textContent = book.pagesCount;
 
     const deleteButton = document.createElement("button");
