@@ -1,11 +1,10 @@
 const library = [];
 const booksByCardMap = new Map();
 
-function Book(author, title, pagesCount, releaseDate) {
+function Book(author, title, pagesCount) {
     this.author = author;
     this.title = title;
     this.pagesCount = pagesCount;
-    this.releaseDate = releaseDate;
 }
 
 function addBookToLibrary(book) {
@@ -19,7 +18,6 @@ function generateCardFromBook(book) {
     const author = document.createElement("div");
     const title = document.createElement("div");
     const pagesCount = document.createElement("div");
-    const releaseDate = document.createElement("div");
     const deleteButton = document.createElement("button");
 
     // apply style
@@ -27,7 +25,6 @@ function generateCardFromBook(book) {
     card.appendChild(author);
     card.appendChild(title);
     card.appendChild(pagesCount);
-    card.appendChild(releaseDate);
     card.appendChild(deleteButton);
 
     return card;
